@@ -205,9 +205,21 @@
       <h3>Upcoming Meet</h3>
       <div id="home-next-meet" class="small" style="margin-top:6px;"></div>
     </div>
+    <div class="card accent-red" style="margin-top:14px;">
+      <span class="eyebrow">Your Goals</span>
+      <h3 style="margin-top:6px;">What This Season Is Building Toward</h3>
+      <div class="grid grid-3" style="margin-top:10px;">
+        <div class="card accent-charcoal" style="text-align:center;"><p style="font-size:17px; font-weight:800; color:var(--charcoal);">5:30</p><p class="small" style="margin-top:2px;">500 Free</p></div>
+        <div class="card accent-charcoal" style="text-align:center;"><p style="font-size:17px; font-weight:800; color:var(--charcoal);">Districts</p><p class="small" style="margin-top:2px;">200 Free</p></div>
+        <div class="card accent-charcoal" style="text-align:center;"><p style="font-size:17px; font-weight:800; color:var(--charcoal);">1:05</p><p class="small" style="margin-top:2px;">100 Back</p></div>
+      </div>
+      <p class="small" style="margin-top:10px;"><strong>Also:</strong> better breakouts and sprint speed, and a great high school taper meet and Makos taper meet.</p>
+      <p class="small" style="margin-top:6px;"><strong>How lifting helps:</strong> leg and kick strength (squats, deadlifts, leg press, calves) for breakouts, push-offs and kick &middot; back extensions and glute bridges for your dolphin kick &middot; bench, pull-ups and triceps for the catch and finish &middot; jumps for sprint power.</p>
+      <p class="small" style="margin-top:6px;"><strong>Track it:</strong> the Progress tab shows your starting and current weights, your assisted pull-up assistance, and your broad jump distance.</p>
+    </div>
     <div class="card accent-charcoal" style="margin-top:14px;">
-      <h3>December Checkpoint</h3>
-      <p class="small" style="margin-top:6px;">Midseason isn't just a warm-up for later — it's a real performance checkpoint. By then: stronger than Phase 1, healthy, completing every practice, better body position, and able to express that strength as speed. Ready to swim fast, not just ready to have trained.</p>
+      <h3>What Counts As A Win Here</h3>
+      <p class="small" style="margin-top:6px;">You don't have to be perfect. You just have to show up, execute the plan, and get 1% better. The goal isn't to leave the weight room exhausted — it's to leave knowing you accomplished something.</p>
     </div>
     <div class="card accent-charcoal" id="thisweek-card" style="display:none; margin-top:14px;"></div>
   </div>
@@ -269,7 +281,7 @@
       <div class="card accent-red"><h3>Quality Over Weight</h3><p class="small" style="margin-top:6px;">Perfect technique and controlled reps matter more than adding weight. More weight is not automatically better.</p></div>
       <div class="card accent-charcoal"><h3>Don't Chase Soreness</h3><p class="small" style="margin-top:6px;">The goal is to get stronger and more explosive, not to be extremely sore.</p></div>
       <div class="card accent-red"><h3>Explosive = Explosive</h3><p class="small" style="margin-top:6px;">For jumps and other power exercises, stop if speed, jump height, or landing quality starts to decline.</p></div>
-      <div class="card accent-charcoal"><h3>40&ndash;50 Minutes</h3><p class="small" style="margin-top:6px;">Distance training already asks a lot of your body. The goal is to get quality work done without turning lifting into another long session.</p></div>
+      <div class="card accent-charcoal"><h3>45&ndash;60 Minutes</h3><p class="small" style="margin-top:6px;">You asked for 45 to 60 minutes. Plan on about 40 to 50 with warm-up and setting up machines, so you're never rushed. We won't add exercises just to fill time. Challenging but manageable: most sets should end with about 2 good reps left. If you're constantly struggling to finish a set, the weight is too heavy.</p></div>
       <div class="card accent-red"><h3>Warm Up First</h3><p class="small" style="margin-top:6px;">Stretch and warm up before lifting, every time. Prehab is better than rehab &mdash; a few minutes now protects you from missing weeks later.</p></div>
       <div class="card accent-charcoal"><h3>You Don't Need To Prove Anything</h3><p class="small" style="margin-top:6px;">You don't need to lift to failure to prove you belong. A successful session is one that makes you better at swimming, not one that leaves you the most wrecked.</p></div>
     </div>
@@ -279,7 +291,7 @@
     </div>
     <div class="card accent-charcoal" style="margin-top:14px;">
       <h3>Why The Program Changes</h3>
-      <p class="small" style="margin-top:6px;">You're starting later than the rest of the group, so your first four weeks are about learning the movements and building a base. Phase 2 is where the strength numbers should move. Phase 3 is about turning that strength into speed and power &mdash; it should feel shorter and sharper, not like a harder bodybuilding workout.</p>
+      <p class="small" style="margin-top:6px;">You're starting later than the rest of the group, so your first weeks are about learning the movements and building a base. Phase 2 is where the strength numbers should move. Phase 3 is about turning that strength into speed and power for your breakouts, push-offs and sprints &mdash; it should feel shorter and sharper, not like a harder bodybuilding workout.</p>
     </div>
   </div>
 
@@ -334,12 +346,12 @@
    preview edits live before committing them here permanently.
    ========================================================================= */
 var CONFIG = {
-  seasonStart: "2026-10-26",
+  seasonStart: "2026-10-19",
   seasonEnd:   "2027-03-21",
 
   // Alex started later than the rest of the group, so her own Phase 1 runs from her start date.
   phaseBlocks: [
-    {phase:1, start:"2026-10-26", end:"2026-11-22", label:"Phase 1: Foundation", blurb:"Learn the movements, build jump and landing skills, and lay a strength base without adding fatigue to your swimming."},
+    {phase:1, start:"2026-10-19", end:"2026-11-22", label:"Phase 1: Foundation", blurb:"Learn the movements, build jump and landing skills, and lay a strength base without adding fatigue to your swimming."},
     {phase:2, start:"2026-11-23", end:"2027-01-03", label:"Phase 2: Strength",   blurb:"Build strength and force production that shows up in your turns, push-offs and stroke, while keeping volume low enough to protect swim practice."},
     {phase:3, start:"2027-01-04", end:"2027-03-21", label:"Phase 3: Power",      blurb:"Turn that strength into power and speed, with lower volume so you stay fresh for racing."}
   ],
@@ -372,79 +384,85 @@ var CONFIG = {
 
   program: {
     1: {
-      mon: {label:"Lower + Jump Skills", note:"You're starting later than the rest of the group, so these first four weeks are about learning the movements and building a base. Machines first, light weights, clean technique, nothing to prove. Write down your seat and pin settings so you can repeat them.", exercises:[
+      mon: {label:"Lower + Jump Skills", note:"You're starting later than the rest of the group, so these first weeks are about learning the movements and building a base. Light weights, clean technique, nothing to prove. Your coach will be right there for the first few sessions.", exercises:[
         {type:"sets", name:"Standing Broad Jump", sets:["3","3","3"], rest:"60 sec", cue:"Swing your arms, jump out, and stick the landing: quiet feet, knees over toes, hold for a second. Start at about 70% effort for the first two weeks. Log your best distance in inches in the weight box. Stop if landing gets sloppy."},
-        {type:"sets", name:"Leg Press", sets:["10","10","10"], rest:"90 sec", cue:"Hips stay on the pad, controlled lowering, don't lock out your knees. No leg press? Use a Smith machine squat to a box, or a light goblet squat."},
-        {type:"sets", name:"Hamstring Curl", sets:["10","10"], rest:"60 sec", cue:"Controlled, full range. No machine? Do a stability-ball curl or a band curl."},
-        {type:"sets", name:"Seated Calf Raise", sets:["12","12","12"], rest:"60 sec", cue:"Full range, pause at the top. This builds the ankle strength behind every push-off. No machine? Do a standing calf raise on a step."},
+        {type:"sets", name:"Goblet Box Squat", sets:["8","8","8"], rest:"90 sec", cue:"Hold one dumbbell at your chest, sit back and down until you lightly touch a box or bench, then stand up. Heels down, chest tall. Light while you learn."},
+        {type:"sets", name:"Leg Press", sets:["10","10"], rest:"90 sec", cue:"Hips stay on the pad, controlled lowering, don't lock out your knees. No leg press? Do step-ups onto a bench, holding light dumbbells."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["8","8"], rest:"90 sec", cue:"Hips back, flat back, the dumbbells slide down your thighs. Feel it in your hamstrings. Keep it light while you learn the hinge."},
+        {type:"sets", name:"Standing Calf Raise", sets:["12","12"], rest:"60 sec", cue:"On a step, light DB in one hand if you want, full range, pause at the top. This builds the ankle strength behind every push-off."},
         {type:"sets", name:"Side Plank", sets:[":30/side",":30/side"], rest:"30 sec", cue:"Straight line from head to feet. Stay tight, breathe normally."}
       ]},
-      wed: {label:"Upper + Core", note:"Chest, pulling, and triceps to finish the pull. Machines keep the movements simple while you build strength.", exercises:[
-        {type:"sets", name:"Machine Chest Press", sets:["10","10","10"], rest:"90 sec", cue:"Seat so the handles line up with mid-chest, press smoothly, control the return. No machine? Use a light DB bench press or push-ups."},
-        {type:"sets", name:"Lat Pulldown", sets:["10","10","10"], rest:"75 sec", cue:"Pull your elbows down toward your ribs, controlled return. No machine? Use an assisted pull-up machine."},
-        {type:"sets", name:"Seated Row", sets:["10","10","10"], rest:"75 sec", cue:"Chest tall, squeeze your shoulder blades together, controlled return. No machine? Use a cable row."},
-        {type:"sets", name:"Tricep Pushdown", sets:["12","12","12"], rest:"60 sec", cue:"Elbows pinned to your sides, full extension at the bottom. This is the finish of your pull. No cable? Use a band pushdown."},
-        {type:"sets", name:"Face Pull", sets:["15","15"], rest:"60 sec", cue:"Light load, pull to your face, elbows high. No cable? Use a band."},
+      wed: {label:"Upper + Core", note:"Bench, pulling, and triceps to finish the pull. A spotter is right there on the bench.", exercises:[
+        {type:"sets", name:"Bench Press", sets:["8","8","8"], rest:"90 sec", cue:"Use a spotter, or set the rack safety pins just above your chest. Controlled lowering, press straight up. No rack? Use a flat DB bench press with a spotter handing you the weights."},
+        {type:"sets", name:"Lat Pulldown", sets:["10","10","10"], rest:"75 sec", cue:"Pull your elbows down toward your ribs, controlled return."},
+        {type:"sets", name:"Single-Arm DB Row", sets:["10/side","10/side","10/side"], rest:"60 sec", cue:"One hand and one knee on a flat bench, pull toward your hip, keep your torso still."},
+        {type:"sets", name:"Tricep Pushdown", sets:["12","12","12"], rest:"60 sec", cue:"Use the lat pulldown station with a straight bar or rope on the high pulley. Elbows pinned to your sides, full extension at the bottom. This is the finish of your pull. No cable? Use a band pushdown."},
+        {type:"sets", name:"Band Pull-Apart", sets:["15","15"], rest:"45 sec", cue:"Light band at chest height, arms straight, pull it apart by squeezing your shoulder blades. No band? Light DB rear-delt raises, bent over."},
         {type:"sets", name:"Plank", sets:[":30",":30"], rest:"30 sec", cue:"Ribs down, glutes tight, long body line. This is your streamline position."}
       ]},
-      fri: {label:"Full Body + Landing Skills", note:"Landing is a skill, like any other. We start by learning to land quietly, then build toward jumping. Forearm and grip work stays light.", exercises:[
+      fri: {label:"Full Body + Landing Skills", note:"Landing is a skill, like any other. We start by learning to land quietly, then build toward jumping. Pull-ups are a skill too: the assistance does the hard part while you learn the movement.", exercises:[
         {type:"sets", name:"Low Box Step-Down Landing", sets:["5","5","5"], rest:"45 sec", cue:"Step off a low box (about 12 to 16 inches). Land quietly on both feet, knees over toes, hips back, then stand tall and reset. No jumping yet. We are practicing landing."},
-        {type:"sets", name:"Leg Extension", sets:["10","10","10"], rest:"60 sec", cue:"Controlled up and down, squeeze at the top. No machine? Do slow sit-to-stands from a bench."},
+        {type:"pullup", name:"Assisted Pull-Ups", sets:3, rest:"90 sec", cue:"Use enough assistance that every rep is smooth and your chin gets over the bar. Log the assistance weight. The goal over time is more reps with less assistance."},
         {type:"sets", name:"Glute Bridge", sets:["10","10"], rest:"60 sec", cue:"Drive through your heels and squeeze hard at the top. Same hip extension as every wall push-off."},
-        {type:"superset", name:"Curl + Tricep Extension Superset", rounds:3, rest:"60 sec after each round", cue:"Curl, then straight into a tricep extension, no rest between. Use a cable or machine for both, elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No machine? Light DB curl and a band or cable pushdown."},
-        {type:"superset", name:"Wrist Curl + Reverse Wrist Curl Superset", rounds:2, rest:"45 sec after each round", cue:"Go light. Forearms on a bench or your thighs, curl palms up, then palms down, no rest between. Small muscles, controlled reps. A light DB, a bar or a cable all work."}
+        {type:"sets", name:"Back Extension", sets:["10","10"], rest:"60 sec", cue:"Controlled up and down. Your hips and low back do the work. This builds the strength behind your dolphin kick off every wall. Stop if your low back feels pinchy. No bench? Do floor supermans."},
+        {type:"superset", name:"DB Curl + Tricep Pushdown Superset", rounds:3, rest:"60 sec after each round", cue:"Curl, then straight into a tricep pushdown at the lat pulldown station, no rest between. Elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No cable? Light DB curl and a band pushdown."},
+        {type:"superset", name:"Wrist Curl + Reverse Wrist Curl Superset", rounds:2, rest:"45 sec after each round", cue:"Go light. Forearms on a bench or your thighs, curl palms up, then palms down, no rest between. Small muscles, controlled reps. A light DB or a bar works."}
       ]}
     },
     2: {
-      mon: {label:"Lower Strength + Jumps", note:"Same machines, heavier. Box jumps start only when your coach has watched your landings and said go. Until then, keep the step-down landings.", exercises:[
+      mon: {label:"Lower Strength + Jumps", note:"Same movements, heavier. Box jumps start only when your coach has watched your landings and said go. Until then, keep the step-down landings.", exercises:[
         {type:"sets", name:"Box Jumps (Low Volume)", sets:["3","3","3"], rest:"90 sec", cue:"Only after your coach has watched your landings and said go. Pick a box you can land on quietly, land soft, step down (don't jump down). No box yet? Keep the step-down landings."},
-        {type:"sets", name:"Leg Press", sets:["6","6","6","6"], rest:"2 min", cue:"Hips stay on the pad, don't lock out your knees. Drive it up with intent, lower under control."},
-        {type:"sets", name:"Hamstring Curl", sets:["8","8","8"], rest:"75 sec", cue:"Controlled, full range."},
-        {type:"sets", name:"Seated Calf Raise", sets:["10","10","10"], rest:"60 sec", cue:"Full range, pause at the top. Drive it up with intent, lower under control."},
+        {type:"sets", name:"Goblet Squat", sets:["6","6","6"], rest:"2 min", cue:"One heavy dumbbell at your chest. Sit to a box if you need a depth target. Control down, drive up. Drive it up with intent, lower under control."},
+        {type:"sets", name:"Leg Press", sets:["8","8"], rest:"90 sec", cue:"Hips stay on the pad, don't lock out your knees. No leg press? Do step-ups onto a bench, holding dumbbells."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["6","6","6"], rest:"2 min", cue:"Hips back, flat back, the dumbbells slide down your thighs. Feel it in your hamstrings. Heavier than Phase 1, same control."},
+        {type:"sets", name:"Standing Calf Raise", sets:["10","10"], rest:"60 sec", cue:"On a step, light DB in one hand if you want, full range, pause at the top. This builds the ankle strength behind every push-off. Drive it up with intent, lower under control."},
         {type:"sets", name:"Side Plank", sets:[":30/side",":30/side"], rest:"30 sec", cue:"Straight line from head to feet."}
       ]},
-      wed: {label:"Upper + Core", note:"Heavier chest and pulling, with triceps to finish the pull. Add weight only when every rep looks clean.", exercises:[
-        {type:"sets", name:"Machine Chest Press", sets:["6","6","6"], rest:"2 min", cue:"Press smoothly, control the return. Drive it up with intent, lower under control."},
+      wed: {label:"Upper + Core", note:"Heavier bench and pulling, with triceps to finish the pull. Add weight only when every rep looks clean.", exercises:[
+        {type:"sets", name:"Bench Press", sets:["6","6","6"], rest:"2 min", cue:"Use a spotter, or set the rack safety pins just above your chest. Controlled lowering, press straight up. No rack? Use a flat DB bench press with a spotter handing you the weights. Drive it up with intent, lower under control."},
         {type:"sets", name:"Lat Pulldown", sets:["8","8","8"], rest:"2 min", cue:"Pull your elbows down toward your ribs, controlled return. Drive it up with intent, lower under control."},
-        {type:"sets", name:"Seated Row", sets:["8","8","8"], rest:"90 sec", cue:"Chest tall, squeeze your shoulder blades together."},
-        {type:"sets", name:"Tricep Pushdown", sets:["8","8","8"], rest:"90 sec", cue:"Elbows pinned, full extension. The finish of your pull. Drive it up with intent, lower under control."},
-        {type:"sets", name:"Face Pull", sets:["15","15"], rest:"60 sec", cue:"Light load, pull to your face, elbows high."},
+        {type:"sets", name:"Single-Arm DB Row", sets:["8/side","8/side","8/side"], rest:"75 sec", cue:"One hand and one knee on a flat bench, pull toward your hip, keep your torso still."},
+        {type:"sets", name:"Tricep Pushdown", sets:["8","8","8"], rest:"90 sec", cue:"Use the lat pulldown station with a straight bar or rope on the high pulley. Elbows pinned to your sides, full extension at the bottom. This is the finish of your pull. No cable? Use a band pushdown. Drive it up with intent, lower under control."},
+        {type:"sets", name:"Band Pull-Apart", sets:["15","15"], rest:"45 sec", cue:"Light band at chest height, arms straight, pull it apart by squeezing your shoulder blades. No band? Light DB rear-delt raises, bent over."},
         {type:"sets", name:"Plank", sets:[":45",":45"], rest:"30 sec", cue:"Ribs down, glutes tight, long body line."}
       ]},
       fri: {label:"Full Body + Power", note:"Your broad jump is your yardstick. We measure it, so you can see your power improve with your own eyes.", exercises:[
         {type:"sets", name:"Standing Broad Jump", sets:["1","1","1"], rest:"90 sec", cue:"Three attempts, full reset between each, stick the landing. Log the distance in inches in the weight box."},
-        {type:"sets", name:"Leg Extension", sets:["8","8","8"], rest:"90 sec", cue:"Controlled up, squeeze at the top. Drive it up with intent, lower under control."},
+        {type:"pullup", name:"Assisted Pull-Ups", sets:3, rest:"2 min", cue:"Use enough assistance that every rep is smooth and your chin gets over the bar. Log the assistance weight. The goal over time is more reps with less assistance. Drive it up with intent, lower under control."},
         {type:"sets", name:"Glute Bridge", sets:["8","8"], rest:"75 sec", cue:"Drive through your heels and squeeze hard at the top. Add a plate or DB across your hips as it gets easy."},
-        {type:"superset", name:"Curl + Tricep Extension Superset", rounds:3, rest:"60 sec after each round", cue:"Curl, then straight into a tricep extension, no rest between. Use a cable or machine for both, elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No machine? Light DB curl and a band or cable pushdown."},
-        {type:"sets", name:"Pec Deck Fly", sets:["12","12"], rest:"60 sec", cue:"Smooth and controlled, don't let the weight stack slam. No machine? Use a cable fly."},
+        {type:"sets", name:"Back Extension", sets:["10","10"], rest:"60 sec", cue:"Controlled up and down. Your hips and low back do the work. This builds the strength behind your dolphin kick off every wall. Stop if your low back feels pinchy. No bench? Do floor supermans."},
+        {type:"sets", name:"DB Floor Press", sets:["10","10"], rest:"60 sec", cue:"Lie on the floor, press up, let your elbows touch the floor at the bottom. Simple and easy on the shoulders."},
+        {type:"superset", name:"DB Curl + Tricep Pushdown Superset", rounds:3, rest:"60 sec after each round", cue:"Curl, then straight into a tricep pushdown at the lat pulldown station, no rest between. Elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No cable? Light DB curl and a band pushdown."},
         {type:"superset", name:"Wrist Curl + Reverse Wrist Curl Superset", rounds:2, rest:"45 sec after each round", cue:"Go light. Curl palms up, then palms down, no rest between."}
       ]}
     },
     3: {
       mon: {label:"Lower Power", note:"Turning strength into power for your turns and push-offs. Lower volume on purpose so you stay fresh for racing.", exercises:[
-        {type:"contrast", name:"Leg Press &rarr; Box Jump", rounds:3, liftReps:"4", jumpReps:"3", restBetween:"20-30 sec", restRounds:"90-120 sec", cue:"Moderate-load leg press, then a fast box jump. Quality over quantity. Stop if jump quality drops."},
-        {type:"sets", name:"Hamstring Curl", sets:["8","8"], rest:"75 sec", cue:"Controlled, full range."},
-        {type:"sets", name:"Seated Calf Raise", sets:["10","10"], rest:"60 sec", cue:"Full range, pause at the top. Drive it up with intent, lower under control."},
+        {type:"contrast", name:"Goblet Squat &rarr; Box Jump", rounds:3, liftReps:"4", jumpReps:"3", restBetween:"20-30 sec", restRounds:"90-120 sec", cue:"Moderate-load goblet squat, then a fast box jump. Quality over quantity. Stop if jump quality drops."},
+        {type:"sets", name:"Leg Press", sets:["6","6"], rest:"2 min", cue:"Fast up, controlled down. No leg press? Do step-ups onto a bench."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["5","5"], rest:"2 min", cue:"Hips back, flat back, the dumbbells slide down your thighs. Feel it in your hamstrings."},
+        {type:"sets", name:"Standing Calf Raise", sets:["10","10"], rest:"60 sec", cue:"On a step, light DB in one hand if you want, full range, pause at the top. This builds the ankle strength behind every push-off. Drive it up with intent, lower under control."},
         {type:"sets", name:"Side Plank", sets:[":30/side",":30/side"], rest:"30 sec", cue:"Straight line from head to feet."}
       ]},
       wed: {label:"Upper Power", note:"Same idea for the upper body: fast intent up, control down. Volume trims on purpose so you stay fresh.", exercises:[
-        {type:"sets", name:"Machine Chest Press", sets:["5","5","5"], rest:"2 min", cue:"Fast on the press, controlled on the way back."},
+        {type:"sets", name:"Bench Press", sets:["5","5","5"], rest:"2 min", cue:"Use a spotter, or set the rack safety pins just above your chest. Controlled lowering, press straight up. No rack? Use a flat DB bench press with a spotter handing you the weights. Drive it up with intent, lower under control."},
         {type:"sets", name:"Lat Pulldown", sets:["6","6","6"], rest:"2 min", cue:"Strong pull, controlled return. Drive it up with intent, lower under control."},
-        {type:"sets", name:"Seated Row", sets:["8","8"], rest:"75 sec", cue:"Squeeze your shoulder blades together."},
-        {type:"sets", name:"Tricep Pushdown", sets:["8","8"], rest:"75 sec", cue:"Elbows pinned, full extension. Drive it up with intent, lower under control."},
-        {type:"sets", name:"Face Pull", sets:["15","15"], rest:"60 sec", cue:"Maintained every phase."}
+        {type:"sets", name:"Single-Arm DB Row", sets:["8/side","8/side"], rest:"75 sec", cue:"One hand and one knee on a flat bench, pull toward your hip, keep your torso still."},
+        {type:"sets", name:"Tricep Pushdown", sets:["8","8"], rest:"75 sec", cue:"Use the lat pulldown station with a straight bar or rope on the high pulley. Elbows pinned to your sides, full extension at the bottom. This is the finish of your pull. No cable? Use a band pushdown. Drive it up with intent, lower under control."},
+        {type:"sets", name:"Band Pull-Apart", sets:["15","15"], rest:"45 sec", cue:"Maintained every phase."}
       ]},
       fri: {label:"Full Body Power", note:"Same explosive intent to close the week. This session is built to leave you fresh, not fried.", exercises:[
-        {type:"contrast", name:"Leg Press &rarr; Broad Jump", rounds:3, liftReps:"4", jumpReps:"3", restBetween:"20-30 sec", restRounds:"90-120 sec", cue:"Moderate-load leg press, then a max-effort broad jump. Stick every landing. Stop if jump quality drops."},
+        {type:"contrast", name:"Goblet Squat &rarr; Broad Jump", rounds:3, liftReps:"4", jumpReps:"3", restBetween:"20-30 sec", restRounds:"90-120 sec", cue:"Moderate-load goblet squat, then a max-effort broad jump. Stick every landing. Stop if jump quality drops."},
+        {type:"pullup", name:"Assisted Pull-Ups", sets:3, rest:"2 min", cue:"Lower volume like everything else this phase. Quality reps, not max effort. Drive it up with intent, lower under control."},
         {type:"sets", name:"Glute Bridge", sets:["8","8"], rest:"75 sec", cue:"Squeeze hard at the top."},
-        {type:"superset", name:"Curl + Tricep Extension Superset", rounds:2, rest:"60 sec after each round", cue:"Curl, then straight into a tricep extension, no rest between. Use a cable or machine for both, elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No machine? Light DB curl and a band or cable pushdown."},
-        {type:"sets", name:"Pec Deck Fly", sets:["10","10"], rest:"60 sec", cue:"Smooth and controlled."},
+        {type:"sets", name:"Back Extension", sets:["8","8"], rest:"60 sec", cue:"Stays in every phase. Same controlled hinge."},
+        {type:"superset", name:"DB Curl + Tricep Pushdown Superset", rounds:2, rest:"60 sec after each round", cue:"Curl, then straight into a tricep pushdown at the lat pulldown station, no rest between. Elbows still, full range, controlled. Triceps are the finish of your pull, so give them your best reps. No cable? Light DB curl and a band pushdown."},
         {type:"superset", name:"Wrist Curl + Reverse Wrist Curl Superset", rounds:2, rest:"45 sec after each round", cue:"Go light. Curl palms up, then palms down, no rest between."}
       ]}
     }
   },
 
-  progressLifts: ["Leg Press","Machine Chest Press","Lat Pulldown","Tricep Pushdown","Leg Extension","Standing Broad Jump"]
+  progressLifts: ["Bench Press","Goblet Squat","Lat Pulldown","Tricep Pushdown","Assisted Pull-Ups","Standing Broad Jump"]
 };
 /* ========================= END COACH-EDITABLE SECTION ===================== */
 
@@ -920,6 +938,24 @@ var CONFIG = {
     return h;
   }
 
+  function renderPullupExercise(ex){
+    var h = '<div class="ex-card" data-exercise="'+ex.name.replace(/"/g,'&quot;')+'">';
+    h += '<div class="ex-top"><span class="ex-name">'+ex.name+'</span><span class="ex-sr">'+ex.sets+' sets</span><button class="flag-ex-btn" onclick="toggleExerciseFlag(this, \''+ex.name.replace(/'/g,"\\'")+'\')" title="Flag to discuss at practice">&#9873;</button></div>';
+    h += '<div class="ex-cue">Rest '+ex.rest+' &middot; '+ex.cue+'</div>';
+    h += '<div class="ex-last"><label class="field-label">Last Time (reps @ assistance)</label><input class="field last-workout-display" readonly placeholder="First time doing this one" style="background:#F5F5F5;"></div>';
+    for (var i=1;i<=ex.sets;i++){
+      h += '<div class="set-row" data-set="'+i+'" style="grid-template-columns:70px 1fr 1fr 1fr 34px;">';
+      h += '<span class="set-label">Set '+i+'</span>';
+      h += '<input class="field log-reps" placeholder="reps">';
+      h += '<input class="field log-assist" placeholder="assistance">';
+      h += '<span class="small" style="align-self:center;">reps @ assist</span>';
+      h += '<input type="checkbox" class="log-done">';
+      h += '</div>';
+    }
+    h += '</div>';
+    return h;
+  }
+
   // ---------------- AUTOSAVE ----------------
   var AUTOSAVE_DEBOUNCE_MS = 2000;
   var autosaveTimer = null;
@@ -948,12 +984,14 @@ var CONFIG = {
     if (rec && rec.date===iso && rec.phase===state.workoutPhase && rec.day===state.workoutDay && rec.workoutId){
       return rec.workoutId;
     }
+    // Recover an existing DB row for today if one exists, instead of blindly creating a new one.
+    // This is what prevents duplicate/oversized entries if localStorage gets out of sync.
     var existingRes = await sb.from('workouts').select('id,completed')
       .eq('athlete_id', auth.athleteId).eq('workout_date', iso)
       .eq('phase', state.workoutPhase).eq('workout_type', state.workoutDay).limit(1);
     if (!existingRes.error && existingRes.data && existingRes.data.length){
       var existing = existingRes.data[0];
-      if (existing.completed) return null;
+      if (existing.completed) return null; // already finished today — don't reopen or duplicate it
       setAutosaveRecord({workoutId: existing.id, date: iso, phase: state.workoutPhase, day: state.workoutDay});
       return existing.id;
     }
@@ -1121,7 +1159,7 @@ var CONFIG = {
     else if (isToday && taper) html += '<span class="tag blue">Taper Week &mdash; keep it light</span>';
     html += '</div>';
     if (isToday && !todayOverride) html += '<p class="small" style="margin-top:4px;">This is today\'s workout.</p>';
-    html += '<p class="small" style="margin-top:8px; color:var(--slate-light);">Rest between sets on purpose &mdash; a rushed set doesn\'t build strength the way a fully recovered one does.</p>';
+    html += '<p class="small" style="margin-top:8px; color:var(--slate-light);">Rest between sets on purpose \u2014 a rushed set doesn\'t build strength the way a fully recovered one does.</p>';
     html += '</div>';
 
     if (day.note){
@@ -1142,6 +1180,7 @@ var CONFIG = {
         if (ex.type==='sets') html += renderSetsExercise(ex, idx);
         else if (ex.type==='superset') html += renderSupersetExercise(ex);
         else if (ex.type==='contrast') html += renderContrastExercise(ex);
+        else if (ex.type==='pullup') html += renderPullupExercise(ex);
       });
     }
 
@@ -1203,14 +1242,18 @@ var CONFIG = {
         var setNum = parseInt(setEl.getAttribute('data-set'));
         var weightEl = setEl.querySelector('.log-weight');
         var repsEl = setEl.querySelector('.log-reps');
+        var assistEl = setEl.querySelector('.log-assist');
         var doneEl = setEl.querySelector('.log-done');
         var weight = weightEl ? weightEl.value : null;
         var reps = repsEl ? repsEl.value : null;
+        var assistance = assistEl ? assistEl.value : null;
         var done = doneEl ? doneEl.checked : false;
-        if (weight || reps || done){
-          rows.push({ exercise: exName, set_number: setNum, reps: reps || null, weight: weight || null, assistance: null });
+        if (weight || reps || assistance || done){
+          rows.push({ exercise: exName, set_number: setNum, reps: reps || null, weight: weight || null, assistance: assistance || null });
         }
       });
+      // Superset/contrast top-level weight fields live outside any [data-set] row —
+      // capture those separately so nothing typed there gets silently dropped.
       exEl.querySelectorAll('.log-weight').forEach(function(input){
         if (input.closest('[data-set]')) return;
         var val = input.value;
@@ -1354,11 +1397,24 @@ var CONFIG = {
   };
 
   // ---------------- PROGRESS ----------------
-  var progLifts = ['Leg Press','Machine Chest Press','Lat Pulldown','Tricep Pushdown','Leg Extension','Standing Broad Jump'];
+  var progLifts = ['Bench Press','Goblet Squat','Lat Pulldown','Tricep Pushdown','Assisted Pull-Ups','Standing Broad Jump'];
   // ---------------- PROGRESS DATA ----------------
   var progressStartsCache = null;
   var progressCurrentCache = null;
   var progressTargetCache = null;
+
+  function findPullupExerciseName(){
+    for (var phase in CONFIG.program){
+      var days = CONFIG.program[phase];
+      for (var dayKey in days){
+        var exercises = (days[dayKey] && days[dayKey].exercises) || [];
+        for (var i=0;i<exercises.length;i++){
+          if (exercises[i].type === 'pullup') return exercises[i].name;
+        }
+      }
+    }
+    return null;
+  }
 
   async function loadProgressData(){
     progressStartsCache = { weight:{}, reps:{}, assistMin:{} };
@@ -1429,6 +1485,7 @@ var CONFIG = {
 
   async function renderProgress(){
     await loadProgressData();
+    var pullupName = findPullupExerciseName();
     var html = '';
     progLifts.forEach(function(name, i){
       var startVal = progressStartsCache.weight[name];
@@ -1443,6 +1500,30 @@ var CONFIG = {
       html += '<div class="prog-nums"><span>Start</span><span id="prog-delta-'+i+'"></span></div>';
       html += '</div>';
     });
+
+    var puStartReps = pullupName ? progressStartsCache.reps[pullupName] : null;
+    var puReps = pullupName ? progressCurrentCache.reps[pullupName] : null;
+    var puStartAssist = pullupName ? progressStartsCache.assistMin[pullupName] : null;
+    var puAssist = pullupName ? progressCurrentCache.assistMin[pullupName] : null;
+
+    html += '<div class="card accent-charcoal">';
+    html += '<h3>Pull-Up Reps</h3>';
+    html += '<p class="small">The real goal — actually performing a pull-up. Higher is better.</p>';
+    html += '<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px;">';
+    html += '<div><label class="field-label">Starting</label><input class="field prog-input" data-idx="pu-reps" data-role="start" readonly style="background:#F5F5F5;" placeholder="Locks in after 2nd time logged" value="'+(puStartReps!=null?puStartReps:'')+'"></div>';
+    html += '<div><label class="field-label">Current</label><input class="field prog-input" data-idx="pu-reps" data-role="current" readonly style="background:#F5F5F5;" placeholder="Not logged yet" value="'+(puReps!=null?puReps:'')+'"></div>';
+    html += '</div><div class="prog-bar-track"><div class="prog-bar-fill" id="prog-bar-pu-reps" style="width:0%;"></div></div>';
+    html += '<div class="prog-nums"><span>Start</span><span id="prog-delta-pu-reps"></span></div></div>';
+
+    html += '<div class="card accent-charcoal">';
+    html += '<h3>Pull-Up Assistance</h3>';
+    html += '<p class="small">Lower is better here — bar fills as assistance goes down.</p>';
+    html += '<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px;">';
+    html += '<div><label class="field-label">Starting</label><input class="field prog-input" data-idx="pu-assist" data-role="start" data-invert="1" readonly style="background:#F5F5F5;" placeholder="Locks in after 2nd time logged" value="'+(puStartAssist!=null?puStartAssist:'')+'"></div>';
+    html += '<div><label class="field-label">Current</label><input class="field prog-input" data-idx="pu-assist" data-role="current" data-invert="1" readonly style="background:#F5F5F5;" placeholder="Not logged yet" value="'+(puAssist!=null?puAssist:'')+'"></div>';
+    html += '</div><div class="prog-bar-track"><div class="prog-bar-fill" id="prog-bar-pu-assist" style="width:0%;"></div></div>';
+    html += '<div class="prog-nums"><span>Start</span><span id="prog-delta-pu-assist"></span></div></div>';
+
     if (workoutLog.length){
       var labelMap = {good:'\uD83D\uDFE2 Good', tough:'\uD83D\uDFE1 Tough', 'too-much':'\uD83D\uDD34 Too Much'};
       html += '<div class="card accent-charcoal" style="grid-column:1 / -1;"><h3>Recent Check-Ins</h3>';
@@ -1456,19 +1537,25 @@ var CONFIG = {
       updateProgBar.call(inp);
     });
   }
-  
   function updateProgBar(){
     var idx = this.getAttribute('data-idx');
+    var invert = this.getAttribute('data-invert')==='1';
     var startEl = document.querySelector('.prog-input[data-idx="'+idx+'"][data-role="start"]');
     var curEl = document.querySelector('.prog-input[data-idx="'+idx+'"][data-role="current"]');
     var start = parseFloat(startEl.value), cur = parseFloat(curEl.value);
     var bar = document.getElementById('prog-bar-'+idx);
     var delta = document.getElementById('prog-delta-'+idx);
     if (isNaN(start) || isNaN(cur) || start<=0){ bar.style.width='0%'; delta.textContent=''; return; }
-    var target = start*1.25;
-    var pct = Math.min(100, Math.max(0, ((cur-start)/(target-start))*100));
-    bar.style.width = pct + '%';
     var diff = cur-start;
+    var pct;
+    if (invert){
+      var target = start*0.5;
+      pct = Math.min(100, Math.max(0, ((start-cur)/(start-target))*100));
+    } else {
+      var target2 = start*1.25;
+      pct = Math.min(100, Math.max(0, ((cur-start)/(target2-start))*100));
+    }
+    bar.style.width = pct + '%';
     delta.textContent = (diff>=0?'+':'') + diff.toFixed(1) + ' (' + (diff/start*100).toFixed(0) + '%)';
   }
 
